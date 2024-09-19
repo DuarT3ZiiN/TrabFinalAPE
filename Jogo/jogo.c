@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h.>
+#include <time.h>
 
 int main(){
     int n, tentativa, totalPartidas = 0, partidasGanhas = 0, tentativasPartida, totalTentativasVitorias;
@@ -41,14 +41,14 @@ do{
         printf("Acabaram suas tentativas! O numero era %d.\n", numAleatorio);
     }
 
-    total_partidas++;
+    totalPartidas++;
 
 
         printf("\nDeseja jogar novamente? (s/n): ");    // Pergunta se o jogador deseja jogar novamente
         getchar();
-        scanf("%c", &jogar_novamente);
+        scanf("%c", &jogarAgain);
 
-    } while (jogar_novamente == 's' || jogar_novamente == 'S');
+    } while (jogarAgain == 's' || jogarAgain == 'S');
 
     
         int x, y;
@@ -91,10 +91,10 @@ do{
     printf("\n-----------------------------\n");        // Exibe as estatísticas das partidas jogadas
     printf("       ESTATISTICAS          \n");
     printf("-----------------------------\n");
-    printf("Total de partidas jogadas: %d\n", total_partidas);
-    printf("Total de partidas ganhas: %d\n", partidas_ganhas);
-    if (partidas_ganhas > 0) {
-        printf("Media de tentativas nas partidas ganhas: %.2f\n", (float)total_tentativas_vitoria / partidas_ganhas);
+    printf("Total de partidas jogadas: %d\n", totalPartidas);
+    printf("Total de partidas ganhas: %d\n", partidasGanhas);
+    if (partidasGanhas > 0) {
+        printf("Media de tentativas nas partidas ganhas: %.2f\n", (float)totalTentativasVitorias / partidasGanhas);
     } else {
         printf("Nenhuma partida foi vencida.\n");
     }
