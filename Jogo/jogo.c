@@ -57,7 +57,7 @@ do{
         getchar();
         scanf("%c", &operacao);
         if (operacao == 's' || operacao == 'S') {
-            printf("Escolha a operacao ( soma = 1, subtração = 2, multiplicação = 3, divisão = 4 ): ");
+            printf("Escolha a operacao ( soma = 1, subtracao = 2, multiplicacao = 3, divisao = 4 ): ");
             getchar();
             scanf("%c", &operacao);
             printf("Digite o primeiro numero: ");
